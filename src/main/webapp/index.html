@@ -1,0 +1,60 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Murach Java Servlet</title>
+    <meta charset="UTF-8">
+    <link rel = "stylesheet" href = "main.css" >
+</head>
+
+<body>
+    <main>
+        <img src = "image/images.png"
+             alt = "murach logo"
+            with = 100 >
+        <h1>Survey</h1>
+        <p>If you have a moment, we'd appiciation it if you would fill out this survey</p>
+
+        <section>
+            <h1>Your information</h1>
+            <form action = "emailList" method = "POST" >
+                <input type="hidden" name="action" value="add">
+
+                <label>First Name</label>
+                <input type = "text" name = "firstname" required > <br>
+                <label>Last Name</label>
+                <input type = "text" name = "lastname" required > <br>
+                <label>Email</label>
+                <input type = "Email" name = "email" required> <br>
+                <label>Date of Birth</label>
+                <input type = "date" name = "dob" required> <br>
+
+                <h1>How did you hear about us ?</h1>
+                <input type = "radio" name = "search" value = "search engine">Search engine
+                <input type = "radio" name = "search" value = "Word of mouth">Word of mouth
+                <input type = "radio" name = "search" value = "Social Media">Social Media
+                <input type = "radio" name = "search" value = "Other">Other
+
+                <h1>Would you like to receive annoncements</h1>
+                <h1>about new CDs and special offer ?</h1>
+
+                <input type = "checkbox" name = "announcement" value = "Yes, I'd like that">Yes, I'd like that <br>
+                <input type = "checkbox" name = "offer" value  = "Yes, please send ..."> Yes, please send ...<br><br>
+                Please contact me by:
+                <select name = "contactMethod">
+                    <option value = "Email or postal mail" selected>Email or postal mail</option>
+                    <option value = "Email only" >Email only</option>
+                    <option value = "Postal mail only">Postal mail only</option>
+                </select> <br>
+
+                <label>&nbsp;</label>
+                <input type="submit" value="submit" id="submit">
+
+            </form>
+        </section>
+    </main>
+
+
+</body>
+
+
+</html>
